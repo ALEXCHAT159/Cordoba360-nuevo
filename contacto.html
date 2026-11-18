@@ -120,30 +120,30 @@
         <div class="contacto-rejilla">
           <section class="panel" aria-labelledby="titulo-form">
             <h2 id="titulo-form">Envíanos un mensaje</h2>
-            <form class="formulario" action="#" method="post">
+            <form class="formulario" id="form-contacto" action="#" method="post">
               <div class="campo">
                 <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required minlength="3" maxlength="60"
+                <input type="text" id="nombre" name="nombre" data-nombre="El nombre" data-error-patron="Usa solo letras y espacios." placeholder="Nombre completo" required minlength="3" maxlength="60"
                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,60}" title="Solo letras y espacios (mínimo 3)" autocomplete="name">
               </div>
               <div class="campo">
                 <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required autocomplete="email">
+                <input type="email" id="correo" name="correo" data-nombre="El correo" placeholder="Correo electrónico" required autocomplete="email">
               </div>
               <div class="doble">
                 <div class="campo">
                   <label for="telefono">Teléfono (opcional)</label>
-                  <input type="tel" id="telefono" name="telefono" placeholder="3001234567" pattern="3[0-9]{9}" title="Celular colombiano de 10 dígitos que empieza por 3" autocomplete="tel">
+                  <input type="tel" id="telefono" name="telefono" data-error-patron="Debe ser un celular de 10 dígitos que empiece por 3." placeholder="3001234567" pattern="3[0-9]{9}" title="Celular colombiano de 10 dígitos que empieza por 3" autocomplete="tel">
                 </div>
                 <div class="campo">
                   <label for="fecha">Fecha tentativa de visita</label>
-                  <input type="date" id="fecha" name="fecha" min="2026-10-24" max="2027-12-31">
+                  <input type="date" id="fecha" name="fecha" min="2026-10-24" max="2027-12-31" data-error-min="La fecha no puede ser anterior a hoy." data-error-max="Elige una fecha antes de 2028.">
                 </div>
               </div>
               <div class="doble">
                 <div class="campo">
                   <label for="asunto">Asunto</label>
-                  <select id="asunto" name="asunto" required>
+                  <select id="asunto" name="asunto" required data-nombre="El asunto">
                     <option value="">Selecciona un asunto</option>
                     <option>Información de destinos</option>
                     <option>Experiencias y planes</option>
@@ -153,16 +153,19 @@
                 </div>
                 <div class="campo">
                   <label for="personas">Número de viajeros</label>
-                  <input type="number" id="personas" name="personas" min="1" max="20" value="1">
+                  <input type="number" id="personas" name="personas" min="1" max="20" value="1" data-nombre="El número de viajeros" data-error-min="Debe viajar al menos 1 persona." data-error-max="Para grupos de más de 20 personas escríbenos por WhatsApp.">
                 </div>
               </div>
               <div class="campo">
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required minlength="10" maxlength="500"></textarea>
-                <span class="ayuda">Entre 10 y 500 caracteres.</span>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required minlength="10" maxlength="500" data-nombre="El mensaje"></textarea>
+                <span class="ayuda"><span id="contador-mensaje">0</span>/500 caracteres (mínimo 10).</span>
               </div>
-              <label class="casilla"><input type="checkbox" name="acepto" required> Acepto el tratamiento de mis datos personales.</label>
-              <button class="btn" type="submit">Enviar</button>
+              <label class="casilla"><input type="checkbox" id="acepto" name="acepto" required> Acepto el tratamiento de mis datos personales.</label>
+              <div class="acciones-form">
+                <button class="btn" type="submit" id="btn-enviar">Enviar</button>
+                <button class="btn btn--secundario" type="button" id="btn-cancelar" hidden>Cancelar edición</button>
+              </div>
             </form>
           </section>
 
@@ -177,6 +180,15 @@
             </ul>
           </section>
         </div>
+
+        <section class="panel mensajes-guardados" aria-labelledby="titulo-mensajes">
+          <div class="mensajes-guardados__cabecera">
+            <h2 id="titulo-mensajes">Tus mensajes guardados</h2>
+            <button class="btn btn--secundario" type="button" id="btn-borrar-todos" hidden>Borrar todos</button>
+          </div>
+          <p class="ayuda">Se guardan en este navegador, así que siguen aquí aunque recargues la página.</p>
+          <ul class="lista-mensajes" id="lista-mensajes"></ul>
+        </section>
       </div>
     </div>
 
@@ -239,5 +251,8 @@
     </div>
   </footer>
 </div>
+<script src="js/utilidades.js" defer></script>
+<script src="js/validacion.js" defer></script>
+<script src="js/contacto.js" defer></script>
 </body>
 </html>
