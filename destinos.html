@@ -114,125 +114,33 @@
       <p>Playas, pueblos con historia y naturaleza por descubrir</p>
     </header>
     <div class="contenedor seccion" style="padding-top:0">
-      <nav class="filtros" aria-label="Categorías de destinos">
-        <a href="#playas">Playas</a><a href="#pueblos">Pueblos y Municipios</a><a href="#naturaleza">Naturaleza</a>
-      </nav>
-      <section class="grupo-destinos" id="playas" aria-labelledby="t-playas">
-        <h2 id="t-playas">Playas</h2>
-        <div class="rejilla-destinos">
-          <article class="ficha">
-            <picture><source srcset="img/san-antero.webp" type="image/webp"><img src="img/san-antero.jpg" alt="Foto de San Antero" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>San Antero</h3>
-              <p>Playas tranquilas y manglares de la bahía de Cispatá.</p>
-              <div class="etiquetas"><span>Sol y playa</span><span>Ecoturismo</span></div>
-              <a class="btn" href="san-antero.html">Ver destino <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/playa-palmeras.webp" type="image/webp"><img src="img/playa-palmeras.jpg" alt="Foto de San Bernardo del Viento" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>San Bernardo del Viento</h3>
-              <p>Playas amplias y la desembocadura del río Sinú en el mar Caribe.</p>
-              <div class="etiquetas"><span>Sol y playa</span></div>
-              
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/playa-atardecer-mar.webp" type="image/webp"><img src="img/playa-atardecer-mar.jpg" alt="Foto de Moñitos" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Moñitos</h3>
-              <p>Atardeceres sobre el mar y pueblo de pescadores.</p>
-              <div class="etiquetas"><span>Sol y playa</span><span>Gastronomía</span></div>
-              
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/playas.webp" type="image/webp"><img src="img/playas.jpg" alt="Foto de Puerto Escondido" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Puerto Escondido</h3>
-              <p>Costa tranquila rodeada de palmeras y bosque seco.</p>
-              <div class="etiquetas"><span>Sol y playa</span><span>Naturaleza</span></div>
-              
-            </div>
-          </article>
+      <section class="herramientas-destinos" aria-label="Buscar y filtrar destinos">
+        <div class="campo campo--buscar">
+          <label for="buscar-destino">Buscar destino</label>
+          <input type="search" id="buscar-destino" placeholder="Ej. Lorica, playa, artesanías..." autocomplete="off" maxlength="40">
+        </div>
+        <div class="filtros" role="group" aria-label="Categorías">
+          <button type="button" class="filtro" data-categoria="todas" aria-pressed="true">Todas</button>
+          <button type="button" class="filtro" data-categoria="playas" aria-pressed="false">Playas</button>
+          <button type="button" class="filtro" data-categoria="pueblos" aria-pressed="false">Pueblos y Municipios</button>
+          <button type="button" class="filtro" data-categoria="naturaleza" aria-pressed="false">Naturaleza</button>
+          <button type="button" class="filtro" data-categoria="favoritos" aria-pressed="false">Mis favoritos <span class="contador" id="contador-favoritos">0</span></button>
+        </div>
+        <div class="campo campo--orden">
+          <label for="ordenar">Ordenar por</label>
+          <select id="ordenar">
+            <option value="nombre-asc">Nombre (A a Z)</option>
+            <option value="nombre-desc">Nombre (Z a A)</option>
+            <option value="distancia">Más cerca de Montería</option>
+          </select>
         </div>
       </section>
-      <section class="grupo-destinos" id="pueblos" aria-labelledby="t-pueblos">
-        <h2 id="t-pueblos">Pueblos y Municipios</h2>
-        <div class="rejilla-destinos">
-          <article class="ficha">
-            <picture><source srcset="img/lorica-rio.webp" type="image/webp"><img src="img/lorica-rio.jpg" alt="Foto de Lorica" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Lorica</h3>
-              <p>Arquitectura republicana a orillas del Sinú y su mercado público.</p>
-              <div class="etiquetas"><span>Cultura</span><span>Historia</span></div>
-              
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/monteria.webp" type="image/webp"><img src="img/monteria.jpg" alt="Foto de Montería" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Montería</h3>
-              <p>La capital ganadera y su Ronda del Sinú.</p>
-              <div class="etiquetas"><span>Ciudad</span><span>Cultura</span></div>
-              
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/tuchin.webp" type="image/webp"><img src="img/tuchin.jpg" alt="Foto de Tuchín" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Tuchín</h3>
-              <p>Cuna del sombrero vueltiao y la artesanía zenú.</p>
-              <div class="etiquetas"><span>Artesanías</span><span>Cultura zenú</span></div>
-              
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/ayapel-catedral.webp" type="image/webp"><img src="img/ayapel-catedral.jpg" alt="Foto de Ayapel" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Ayapel</h3>
-              <p>Pueblo de tradición religiosa junto a la ciénaga.</p>
-              <div class="etiquetas"><span>Cultura</span><span>Naturaleza</span></div>
-              
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="grupo-destinos" id="naturaleza" aria-labelledby="t-naturaleza">
-        <h2 id="t-naturaleza">Naturaleza</h2>
-        <div class="rejilla-destinos">
-          <article class="ficha">
-            <picture><source srcset="img/cienaga-ayapel.webp" type="image/webp"><img src="img/cienaga-ayapel.jpg" alt="Foto de Ciénaga de Ayapel" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Ciénaga de Ayapel</h3>
-              <p>Uno de los humedales más grandes del país, ideal para avistar aves.</p>
-              <div class="etiquetas"><span>Ecoturismo</span></div>
-              
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/naturaleza-camino.webp" type="image/webp"><img src="img/naturaleza-camino.jpg" alt="Foto de Tierralta y Paramillo" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Tierralta y Paramillo</h3>
-              <p>Puerta de entrada al Parque Nacional Natural Paramillo.</p>
-              <div class="etiquetas"><span>Aventura</span><span>Naturaleza</span></div>
-              
-            </div>
-          </article>
-          <article class="ficha">
-            <picture><source srcset="img/aventura-rio.webp" type="image/webp"><img src="img/aventura-rio.jpg" alt="Foto de Río Sinú" loading="lazy" decoding="async"></picture>
-            <div class="ficha__cuerpo">
-              <h3>Río Sinú</h3>
-              <p>Paseos en canoa entre palmeras y vegetación tropical.</p>
-              <div class="etiquetas"><span>Aventura</span></div>
-              
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
 
+      <p class="resultado-busqueda" id="resultado" aria-live="polite"></p>
+      <div class="rejilla-destinos" id="lista-destinos">
+        <noscript><p>Activa JavaScript para ver el listado de destinos.</p></noscript>
+      </div>
+    </div>
   </main>
 
   <aside class="flotantes" aria-label="Accesos rápidos">
@@ -292,5 +200,7 @@
     </div>
   </footer>
 </div>
+<script src="js/utilidades.js" defer></script>
+<script src="js/destinos.js" defer></script>
 </body>
 </html>

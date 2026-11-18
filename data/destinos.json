@@ -1,0 +1,126 @@
+{
+  "actualizado": "2026-11-18",
+  "destinos": [
+    {
+      "id": "san-antero",
+      "nombre": "San Antero",
+      "categoria": "playas",
+      "descripcion": "Playas tranquilas y manglares de la bahía de Cispatá. En Semana Santa celebra el Festival Nacional del Burro.",
+      "etiquetas": ["Sol y playa", "Ecoturismo"],
+      "imagen": "san-antero",
+      "alt": "Playa de San Antero con una lancha de colores y palmeras",
+      "kmDesdeMonteria": 113,
+      "detalle": "san-antero.html"
+    },
+    {
+      "id": "san-bernardo",
+      "nombre": "San Bernardo del Viento",
+      "categoria": "playas",
+      "descripcion": "Playas amplias y la desembocadura del río Sinú en el mar Caribe.",
+      "etiquetas": ["Sol y playa"],
+      "imagen": "playa-palmeras",
+      "alt": "Palmeras frente al mar al atardecer",
+      "kmDesdeMonteria": 95,
+      "detalle": null
+    },
+    {
+      "id": "monitos",
+      "nombre": "Moñitos",
+      "categoria": "playas",
+      "descripcion": "Pueblo de pescadores con atardeceres sobre el mar y comida de mar fresca.",
+      "etiquetas": ["Sol y playa", "Gastronomía"],
+      "imagen": "playa-atardecer-mar",
+      "alt": "Atardecer sobre el mar con nubes",
+      "kmDesdeMonteria": 105,
+      "detalle": null
+    },
+    {
+      "id": "puerto-escondido",
+      "nombre": "Puerto Escondido",
+      "categoria": "playas",
+      "descripcion": "Costa tranquila rodeada de palmeras y bosque seco.",
+      "etiquetas": ["Sol y playa", "Naturaleza"],
+      "imagen": "playas",
+      "alt": "Orilla de playa con cielo rosado y palmeras",
+      "kmDesdeMonteria": 90,
+      "detalle": null
+    },
+    {
+      "id": "lorica",
+      "nombre": "Lorica",
+      "categoria": "pueblos",
+      "descripcion": "Arquitectura republicana a orillas del Sinú y su mercado público de 1928.",
+      "etiquetas": ["Cultura", "Historia"],
+      "imagen": "lorica-rio",
+      "alt": "Edificios de Lorica a la orilla del río Sinú",
+      "kmDesdeMonteria": 60,
+      "detalle": null
+    },
+    {
+      "id": "monteria",
+      "nombre": "Montería",
+      "categoria": "pueblos",
+      "descripcion": "La capital del departamento, con la Ronda del Sinú y sus esculturas iluminadas.",
+      "etiquetas": ["Ciudad", "Cultura"],
+      "imagen": "monteria",
+      "alt": "Esculturas iluminadas en la Ronda del Sinú de noche",
+      "kmDesdeMonteria": 0,
+      "detalle": null
+    },
+    {
+      "id": "tuchin",
+      "nombre": "Tuchín",
+      "categoria": "pueblos",
+      "descripcion": "Cuna del sombrero vueltiao y de la artesanía en caña flecha del pueblo zenú.",
+      "etiquetas": ["Artesanías", "Cultura zenú"],
+      "imagen": "tuchin",
+      "alt": "Letrero colorido de Tuchín en la plaza",
+      "kmDesdeMonteria": 110,
+      "detalle": null
+    },
+    {
+      "id": "ayapel",
+      "nombre": "Ayapel",
+      "categoria": "pueblos",
+      "descripcion": "Pueblo de tradición religiosa al lado de la ciénaga del mismo nombre.",
+      "etiquetas": ["Cultura", "Naturaleza"],
+      "imagen": "ayapel-catedral",
+      "alt": "Iglesia de Ayapel al atardecer",
+      "kmDesdeMonteria": 200,
+      "detalle": null
+    },
+    {
+      "id": "cienaga-ayapel",
+      "nombre": "Ciénaga de Ayapel",
+      "categoria": "naturaleza",
+      "descripcion": "Uno de los humedales más grandes del país. Se recorre en lancha para ver aves.",
+      "etiquetas": ["Ecoturismo", "Aves"],
+      "imagen": "cienaga-ayapel",
+      "alt": "Pescador en canoa sobre la ciénaga al atardecer",
+      "kmDesdeMonteria": 205,
+      "detalle": null
+    },
+    {
+      "id": "paramillo",
+      "nombre": "Tierralta y Paramillo",
+      "categoria": "naturaleza",
+      "descripcion": "Entrada al Parque Nacional Natural Paramillo y a la represa de Urrá.",
+      "etiquetas": ["Aventura", "Naturaleza"],
+      "imagen": "naturaleza-camino",
+      "alt": "Camino de tierra rodeado de árboles",
+      "kmDesdeMonteria": 85,
+      "detalle": null
+    },
+    {
+      "id": "rio-sinu",
+      "nombre": "Río Sinú",
+      "categoria": "naturaleza",
+      "descripcion": "Paseos en canoa y planchón entre palmeras y vegetación de ribera.",
+      "etiquetas": ["Aventura", "Río"],
+      "imagen": "aventura-rio",
+      "alt": "Canoas en un río rodeado de palmeras",
+      "kmDesdeMonteria": 5,
+      "detalle": null
+    }
+  ]
+}
