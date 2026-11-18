@@ -124,7 +124,7 @@
           <p class="subtitulo">Playas paradisíacas y mar maravilloso</p>
           <ul class="datos-destino">
             <li class="dato"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div><h3>Ubicación</h3><p>Golfo de Morrosquillo, 2 h de Montería</p></div></li>
-            <li class="dato"><i class="fa-solid fa-cloud-sun" aria-hidden="true"></i><div><h3>Clima</h3><p>Cálido, 27 a 32 °C</p></div></li>
+            <li class="dato"><i class="fa-solid fa-cloud-sun" aria-hidden="true"></i><div><h3>Clima</h3><p id="clima-resumen">Cálido, 27 a 32 °C</p></div></li>
             <li class="dato"><i class="fa-regular fa-calendar-days" aria-hidden="true"></i><div><h3>Mejor agenda</h3><p>Diciembre a abril</p></div></li>
             <li class="dato"><i class="fa-regular fa-clock" aria-hidden="true"></i><div><h3>Días sugeridos</h3><p>2 a 3 días</p></div></li>
           </ul>
@@ -154,6 +154,11 @@
         <div>
           <h2 id="titulo-sobre">Sobre San Antero</h2>
           <p>Ubicado en el golfo de Morrosquillo, San Antero combina playas tranquilas de aguas cálidas con los manglares de la bahía de Cispatá, uno de los ecosistemas mejor conservados del Caribe. Es famoso por el Festival Nacional del Burro, que se celebra cada Semana Santa, y por su gastronomía basada en pescado fresco y coco.</p>
+          <section class="clima" aria-labelledby="titulo-clima">
+            <h3 id="titulo-clima">El clima ahora en San Antero</h3>
+            <div id="clima-contenido"></div>
+            <p class="clima__fuente">Datos en vivo de <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p>
+          </section>
         </div>
         <figure class="mapa">
           <a href="https://maps.google.com/?q=San+Antero,+Córdoba,+Colombia" target="_blank" rel="noopener">
@@ -234,5 +239,7 @@
     </div>
   </footer>
 </div>
+<script src="js/utilidades.js" defer></script>
+<script src="js/clima.js" defer></script>
 </body>
 </html>
