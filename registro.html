@@ -118,44 +118,49 @@
         <div class="registro-rejilla">
           <section class="panel" aria-labelledby="titulo-registro">
             <h2 id="titulo-registro">Registrarte</h2>
-            <form class="formulario" action="#" method="post">
+            <form class="formulario" id="form-registro" action="#" method="post">
               <div class="doble">
                 <div class="campo">
                   <label for="r-nombre">Nombres</label>
-                  <input type="text" id="r-nombre" name="nombres" placeholder="Tus nombres" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,40}" title="Solo letras" autocomplete="given-name">
+                  <input type="text" id="r-nombre" name="nombres" data-nombre="El nombre" data-error-patron="Usa solo letras (mínimo 2)." placeholder="Tus nombres" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,40}" title="Solo letras" autocomplete="given-name">
                 </div>
                 <div class="campo">
                   <label for="r-apellido">Apellidos</label>
-                  <input type="text" id="r-apellido" name="apellidos" placeholder="Tus apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,40}" title="Solo letras" autocomplete="family-name">
+                  <input type="text" id="r-apellido" name="apellidos" data-nombre="El apellido" data-error-patron="Usa solo letras (mínimo 2)." placeholder="Tus apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,40}" title="Solo letras" autocomplete="family-name">
                 </div>
               </div>
               <div class="doble">
                 <div class="campo">
                   <label for="r-correo">Correo electrónico</label>
-                  <input type="email" id="r-correo" name="correo" placeholder="nombre@correo.com" required autocomplete="email">
+                  <input type="email" id="r-correo" name="correo" data-nombre="El correo" placeholder="nombre@correo.com" required autocomplete="email">
                 </div>
                 <div class="campo">
                   <label for="r-celular">Celular</label>
-                  <input type="tel" id="r-celular" name="celular" placeholder="3001234567" required pattern="3[0-9]{9}" title="10 dígitos, empieza por 3" autocomplete="tel">
+                  <input type="tel" id="r-celular" name="celular" data-nombre="El celular" data-error-patron="Debe tener 10 dígitos y empezar por 3." placeholder="3001234567" required pattern="3[0-9]{9}" title="10 dígitos, empieza por 3" autocomplete="tel">
                 </div>
               </div>
               <div class="doble">
                 <div class="campo">
                   <label for="r-nacimiento">Fecha de nacimiento</label>
-                  <input type="date" id="r-nacimiento" name="nacimiento" required min="1920-01-01" max="2008-10-24">
+                  <input type="date" id="r-nacimiento" name="nacimiento" required min="1920-01-01" max="2008-10-24" data-nombre="La fecha de nacimiento" data-error-max="Debes ser mayor de 18 años para registrarte." data-error-min="Revisa el año de nacimiento.">
                   <span class="ayuda">Debes ser mayor de 18 años.</span>
                 </div>
                 <div class="campo">
                   <label for="r-origen">Ciudad de origen</label>
-                  <input type="text" id="r-origen" name="origen" placeholder="Ej. Montería" list="ciudades" required>
+                  <input type="text" id="r-origen" name="origen" data-nombre="La ciudad" placeholder="Ej. Montería" list="ciudades" required>
                   <datalist id="ciudades"><option value="Montería"><option value="Sahagún"><option value="Lorica"><option value="Medellín"><option value="Bogotá"><option value="Cartagena"></datalist>
                 </div>
               </div>
               <div class="campo">
                 <label for="r-clave">Contraseña</label>
-                <input type="password" id="r-clave" name="clave" placeholder="Mínimo 8 caracteres" required minlength="8"
+                <input type="password" id="r-clave" name="clave" data-nombre="La contraseña" data-error-patron="Le falta una mayúscula o un número." placeholder="Mínimo 8 caracteres" required minlength="8"
                        pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Al menos 8 caracteres, una mayúscula y un número" autocomplete="new-password">
-                <span class="ayuda">Al menos 8 caracteres, una mayúscula y un número.</span>
+                <div class="fuerza" aria-hidden="true"><span id="barra-fuerza"></span></div>
+                <span class="ayuda" id="texto-fuerza">Al menos 8 caracteres, una mayúscula y un número.</span>
+              </div>
+              <div class="campo">
+                <label for="r-clave2">Confirma la contraseña</label>
+                <input type="password" id="r-clave2" name="clave2" placeholder="Repite la contraseña" required data-nombre="La confirmación" autocomplete="new-password">
               </div>
               <fieldset class="campo">
                 <legend>¿Qué te interesa?</legend>
@@ -168,7 +173,7 @@
                   <label><input type="checkbox" name="intereses" value="aventura"> Aventura</label>
                 </div>
               </fieldset>
-              <label class="casilla"><input type="checkbox" name="terminos" required> Acepto los términos y condiciones y la política de privacidad.</label>
+              <label class="casilla"><input type="checkbox" id="r-terminos" name="terminos" required> Acepto los términos y condiciones y la política de privacidad.</label>
               <button class="btn" type="submit">Crear cuenta</button>
             </form>
           </section>
@@ -176,14 +181,14 @@
           <div class="registro-lado">
             <section class="panel" id="login" aria-labelledby="titulo-login">
               <h2 id="titulo-login">Iniciar sesión</h2>
-              <form class="formulario" action="#" method="post">
+              <form class="formulario" id="form-login" action="#" method="post">
                 <div class="campo">
                   <label for="l-correo">Correo electrónico</label>
-                  <input type="email" id="l-correo" name="correo" placeholder="nombre@correo.com" required autocomplete="email">
+                  <input type="email" id="l-correo" name="correo" data-nombre="El correo" placeholder="nombre@correo.com" required autocomplete="email">
                 </div>
                 <div class="campo">
                   <label for="l-clave">Contraseña</label>
-                  <input type="password" id="l-clave" name="clave" placeholder="Tu contraseña" required minlength="8" autocomplete="current-password">
+                  <input type="password" id="l-clave" name="clave" data-nombre="La contraseña" placeholder="Tu contraseña" required minlength="8" autocomplete="current-password">
                 </div>
                 <button class="btn" type="submit">Ingresar</button>
               </form>
@@ -261,5 +266,8 @@
     </div>
   </footer>
 </div>
+<script src="js/utilidades.js" defer></script>
+<script src="js/validacion.js" defer></script>
+<script src="js/registro.js" defer></script>
 </body>
 </html>
