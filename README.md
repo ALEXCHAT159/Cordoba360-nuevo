@@ -2,7 +2,9 @@
 
 Plataforma web turística del departamento de Córdoba, Colombia. Curso Desarrollo Web I, Universidad de Córdoba (2026-II). Autor: Alex Arrieta.
 
-Sitio publicado: https://alexchat159.github.io/Cordoba360-nuevo/
+La entrega final, hecha con Vue.js, está en la carpeta [`vue/`](vue/) y publicada en https://alexchat159.github.io/Cordoba360-nuevo/vue/. La explicación completa está en [vue/README.md](vue/README.md).
+
+Sitio estático (avances 1 y 2): https://alexchat159.github.io/Cordoba360-nuevo/
 
 La primera entrega cubrió la semántica estructural, la maquetación responsive y el versionamiento (HTML5 y CSS3). El segundo avance agrega JavaScript: eventos, consumo de datos con `fetch`, almacenamiento en `localStorage` y validación de formularios en tiempo real. Lo explico más abajo, en la sección [Avance 2](#avance-2-javascript).
 

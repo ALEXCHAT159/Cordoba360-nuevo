@@ -1,0 +1,65 @@
+# Despliegue continuo en GitHub Pages.
+# Cada push a main compila la app Vue (carpeta vue/) y publica:
+#   /Cordoba360-nuevo/      → sitio estático de los avances 1 y 2
+#   /Cordoba360-nuevo/vue/  → SPA de la entrega final (Vue.js)
+name: Despliegue en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: vue/package-lock.json
+
+      - name: Instalar dependencias de la app Vue
+        working-directory: vue
+        run: npm ci
+
+      - name: Build de producción
+        working-directory: vue
+        run: npm run build
+
+      - name: Armar la carpeta del sitio
+        run: |
+          mkdir -p _site
+          cp -r index.html destinos.html experiencias.html informacion.html san-antero.html contacto.html registro.html css js data img _site/
+          cp -r vue/dist _site/vue
+          # Pages solo usa el 404.html de la raíz del sitio. Con la copia de la
+          # app Vue, un enlace directo como /vue/destinos/lorica carga la SPA
+          # y Vue Router muestra la vista que corresponde.
+          cp vue/dist/404.html _site/404.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publicar:
+    needs: compilar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4
