@@ -1,0 +1,387 @@
+{
+  "actualizado": "2026-11-22",
+  "destinos": [
+    {
+      "id": "san-antero",
+      "nombre": "San Antero",
+      "categoria": "playas",
+      "descripcion": "Playas tranquilas y manglares de la bahía de Cispatá. En Semana Santa celebra el Festival Nacional del Burro.",
+      "etiquetas": [
+        "Sol y playa",
+        "Ecoturismo"
+      ],
+      "imagen": "san-antero",
+      "alt": "Playa de San Antero con una lancha de colores y palmeras",
+      "kmDesdeMonteria": 113,
+      "lat": 9.374,
+      "lon": -75.759,
+      "subtitulo": "Playas paradisíacas y mar maravilloso",
+      "ubicacion": "Golfo de Morrosquillo, 2 h de Montería",
+      "mejorEpoca": "Diciembre a abril",
+      "dias": "2 a 3 días",
+      "historia": "Ubicado en el golfo de Morrosquillo, San Antero combina playas tranquilas de aguas cálidas con los manglares de la bahía de Cispatá, uno de los ecosistemas mejor conservados del Caribe. Es famoso por el Festival Nacional del Burro, que se celebra cada Semana Santa, y por su gastronomía basada en pescado fresco y coco.",
+      "galeria": [
+        {
+          "imagen": "san-antero",
+          "alt": "Playa de San Antero con lancha de colores y palmeras"
+        },
+        {
+          "imagen": "playa-atardecer-mar",
+          "alt": "Atardecer sobre el mar en la bahía de Cispatá"
+        },
+        {
+          "imagen": "san-antero-vista",
+          "alt": "Vista al mar desde una terraza con árboles"
+        },
+        {
+          "imagen": "playa-palmeras",
+          "alt": "Palmeras al atardecer frente al mar"
+        },
+        {
+          "imagen": "playas",
+          "alt": "Orilla de playa con cielo rosado"
+        }
+      ],
+      "mapa": "mapa-san-antero"
+    },
+    {
+      "id": "san-bernardo",
+      "nombre": "San Bernardo del Viento",
+      "categoria": "playas",
+      "descripcion": "Playas amplias y la desembocadura del río Sinú en el mar Caribe.",
+      "etiquetas": [
+        "Sol y playa"
+      ],
+      "imagen": "playa-palmeras",
+      "alt": "Palmeras frente al mar al atardecer",
+      "kmDesdeMonteria": 95,
+      "lat": 9.354,
+      "lon": -75.954,
+      "subtitulo": "Donde el Sinú se encuentra con el mar",
+      "ubicacion": "Costa norte, 1 h 45 min de Montería",
+      "mejorEpoca": "Diciembre a abril",
+      "dias": "1 a 2 días",
+      "historia": "San Bernardo del Viento está en la desembocadura del río Sinú. Sus playas son amplias y poco concurridas, y desde allí salen lanchas hacia los manglares y hacia la isla Tortuguilla.",
+      "galeria": [
+        {
+          "imagen": "playa-palmeras",
+          "alt": "Palmeras frente al mar al atardecer"
+        },
+        {
+          "imagen": "playas",
+          "alt": "Orilla de playa con cielo rosado"
+        },
+        {
+          "imagen": "playa-atardecer-mar",
+          "alt": "Atardecer sobre el mar con nubes"
+        }
+      ]
+    },
+    {
+      "id": "monitos",
+      "nombre": "Moñitos",
+      "categoria": "playas",
+      "descripcion": "Pueblo de pescadores con atardeceres sobre el mar y comida de mar fresca.",
+      "etiquetas": [
+        "Sol y playa",
+        "Gastronomía"
+      ],
+      "imagen": "playa-atardecer-mar",
+      "alt": "Atardecer sobre el mar con nubes",
+      "kmDesdeMonteria": 105,
+      "lat": 9.245,
+      "lon": -76.13,
+      "subtitulo": "Atardeceres y comida de mar",
+      "ubicacion": "Costa occidental, 2 h de Montería",
+      "mejorEpoca": "Diciembre a marzo",
+      "dias": "1 a 2 días",
+      "historia": "Moñitos es un pueblo de pescadores con playas tranquilas. Lo mejor es ver el atardecer sobre el mar y probar el pescado frito con arroz de coco recién hecho.",
+      "galeria": [
+        {
+          "imagen": "playa-atardecer-mar",
+          "alt": "Atardecer sobre el mar con nubes"
+        },
+        {
+          "imagen": "gastronomia-pescado",
+          "alt": "Pescado frito con arroz de coco y patacón"
+        },
+        {
+          "imagen": "playas",
+          "alt": "Orilla de playa con cielo rosado"
+        }
+      ]
+    },
+    {
+      "id": "puerto-escondido",
+      "nombre": "Puerto Escondido",
+      "categoria": "playas",
+      "descripcion": "Costa tranquila rodeada de palmeras y bosque seco.",
+      "etiquetas": [
+        "Sol y playa",
+        "Naturaleza"
+      ],
+      "imagen": "playas",
+      "alt": "Orilla de playa con cielo rosado y palmeras",
+      "kmDesdeMonteria": 90,
+      "lat": 9.019,
+      "lon": -76.262,
+      "subtitulo": "Costa tranquila entre palmeras",
+      "ubicacion": "Costa occidental, 2 h 15 min de Montería",
+      "mejorEpoca": "Diciembre a abril",
+      "dias": "1 a 2 días",
+      "historia": "Puerto Escondido tiene playas rodeadas de palmeras y bosque seco tropical. Es un buen lugar para descansar lejos de las zonas más concurridas del golfo.",
+      "galeria": [
+        {
+          "imagen": "playas",
+          "alt": "Orilla de playa con cielo rosado y palmeras"
+        },
+        {
+          "imagen": "playa-palmeras",
+          "alt": "Palmeras frente al mar"
+        },
+        {
+          "imagen": "naturaleza-sabana",
+          "alt": "Sabanas verdes de Córdoba"
+        }
+      ]
+    },
+    {
+      "id": "lorica",
+      "nombre": "Lorica",
+      "categoria": "pueblos",
+      "descripcion": "Arquitectura republicana a orillas del Sinú y su mercado público de 1928.",
+      "etiquetas": [
+        "Cultura",
+        "Historia"
+      ],
+      "imagen": "lorica-rio",
+      "alt": "Edificios de Lorica a la orilla del río Sinú",
+      "kmDesdeMonteria": 60,
+      "lat": 9.237,
+      "lon": -75.814,
+      "subtitulo": "Arquitectura republicana a orillas del Sinú",
+      "ubicacion": "Bajo Sinú, 1 h de Montería",
+      "mejorEpoca": "Todo el año",
+      "dias": "1 día",
+      "historia": "Santa Cruz de Lorica conserva casas y edificios de influencia sirio-libanesa. Su mercado público, construido en 1928, es patrimonio de la nación y el mejor lugar para probar el bocachico y los dulces típicos.",
+      "galeria": [
+        {
+          "imagen": "lorica-rio",
+          "alt": "Edificios de Lorica a la orilla del río Sinú"
+        },
+        {
+          "imagen": "lorica-mercado",
+          "alt": "Mercado público de Santa Cruz de Lorica"
+        },
+        {
+          "imagen": "gastronomia-tipica",
+          "alt": "Platos típicos cordobeses"
+        }
+      ]
+    },
+    {
+      "id": "monteria",
+      "nombre": "Montería",
+      "categoria": "pueblos",
+      "descripcion": "La capital del departamento, con la Ronda del Sinú y sus esculturas iluminadas.",
+      "etiquetas": [
+        "Ciudad",
+        "Cultura"
+      ],
+      "imagen": "monteria",
+      "alt": "Esculturas iluminadas en la Ronda del Sinú de noche",
+      "kmDesdeMonteria": 0,
+      "lat": 8.75,
+      "lon": -75.881,
+      "subtitulo": "La perla del Sinú",
+      "ubicacion": "Capital del departamento",
+      "mejorEpoca": "Todo el año; junio por la Feria Ganadera",
+      "dias": "1 a 2 días",
+      "historia": "Montería es la capital de Córdoba. La Ronda del Sinú es un parque lineal a orillas del río, con esculturas, ciclorruta y árboles donde viven iguanas y monos aulladores.",
+      "galeria": [
+        {
+          "imagen": "monteria",
+          "alt": "Esculturas iluminadas en la Ronda del Sinú de noche"
+        },
+        {
+          "imagen": "aventura-rio",
+          "alt": "Canoas en el río Sinú"
+        },
+        {
+          "imagen": "hero-rio-sinu",
+          "alt": "Atardecer sobre el río Sinú"
+        }
+      ]
+    },
+    {
+      "id": "tuchin",
+      "nombre": "Tuchín",
+      "categoria": "pueblos",
+      "descripcion": "Cuna del sombrero vueltiao y de la artesanía en caña flecha del pueblo zenú.",
+      "etiquetas": [
+        "Artesanías",
+        "Cultura zenú"
+      ],
+      "imagen": "tuchin",
+      "alt": "Letrero colorido de Tuchín en la plaza",
+      "kmDesdeMonteria": 110,
+      "lat": 9.186,
+      "lon": -75.556,
+      "subtitulo": "Cuna del sombrero vueltiao",
+      "ubicacion": "Resguardo zenú de San Andrés de Sotavento, 2 h de Montería",
+      "mejorEpoca": "Todo el año",
+      "dias": "1 día",
+      "historia": "En Tuchín casi todas las familias trabajan la caña flecha. Allí se tejen a mano los sombreros vueltiaos, que se pueden comprar directamente a los artesanos zenúes.",
+      "galeria": [
+        {
+          "imagen": "tuchin",
+          "alt": "Letrero colorido de Tuchín en la plaza"
+        },
+        {
+          "imagen": "cultura-gaitas",
+          "alt": "Músicos tradicionales con sombrero vueltiao"
+        },
+        {
+          "imagen": "aldea-zenu",
+          "alt": "Aldea zenú con bohíos"
+        }
+      ]
+    },
+    {
+      "id": "ayapel",
+      "nombre": "Ayapel",
+      "categoria": "pueblos",
+      "descripcion": "Pueblo de tradición religiosa al lado de la ciénaga del mismo nombre.",
+      "etiquetas": [
+        "Cultura",
+        "Naturaleza"
+      ],
+      "imagen": "ayapel-catedral",
+      "alt": "Iglesia de Ayapel al atardecer",
+      "kmDesdeMonteria": 200,
+      "lat": 8.313,
+      "lon": -75.145,
+      "subtitulo": "Tradición religiosa junto a la ciénaga",
+      "ubicacion": "Subregión San Jorge, 4 h de Montería",
+      "mejorEpoca": "Diciembre a marzo",
+      "dias": "2 días",
+      "historia": "Ayapel es un pueblo tranquilo a la orilla de la ciénaga del mismo nombre. Su iglesia y sus fiestas patronales atraen visitantes de toda la región.",
+      "galeria": [
+        {
+          "imagen": "ayapel-catedral",
+          "alt": "Iglesia de Ayapel al atardecer"
+        },
+        {
+          "imagen": "cienaga-ayapel",
+          "alt": "Pescador en canoa sobre la ciénaga"
+        },
+        {
+          "imagen": "pescador-atarraya",
+          "alt": "Pescador lanzando la atarraya"
+        }
+      ]
+    },
+    {
+      "id": "cienaga-ayapel",
+      "nombre": "Ciénaga de Ayapel",
+      "categoria": "naturaleza",
+      "descripcion": "Uno de los humedales más grandes del país. Se recorre en lancha para ver aves.",
+      "etiquetas": [
+        "Ecoturismo",
+        "Aves"
+      ],
+      "imagen": "cienaga-ayapel",
+      "alt": "Pescador en canoa sobre la ciénaga al atardecer",
+      "kmDesdeMonteria": 205,
+      "lat": 8.33,
+      "lon": -75.11,
+      "subtitulo": "Uno de los humedales más grandes del país",
+      "ubicacion": "Subregión San Jorge, 4 h de Montería",
+      "mejorEpoca": "Diciembre a marzo",
+      "dias": "1 a 2 días",
+      "historia": "La ciénaga de Ayapel es un complejo de humedales donde viven cientos de especies de aves. Se recorre en lancha con pescadores de la zona, que conocen los mejores puntos de avistamiento.",
+      "galeria": [
+        {
+          "imagen": "cienaga-ayapel",
+          "alt": "Pescador en canoa sobre la ciénaga al atardecer"
+        },
+        {
+          "imagen": "pescador-atarraya",
+          "alt": "Pescador lanzando la atarraya"
+        },
+        {
+          "imagen": "naturaleza-sabana",
+          "alt": "Humedales verdes"
+        }
+      ]
+    },
+    {
+      "id": "paramillo",
+      "nombre": "Tierralta y Paramillo",
+      "categoria": "naturaleza",
+      "descripcion": "Entrada al Parque Nacional Natural Paramillo y a la represa de Urrá.",
+      "etiquetas": [
+        "Aventura",
+        "Naturaleza"
+      ],
+      "imagen": "naturaleza-camino",
+      "alt": "Camino de tierra rodeado de árboles",
+      "kmDesdeMonteria": 85,
+      "lat": 8.172,
+      "lon": -76.059,
+      "subtitulo": "Selva, montaña y la represa de Urrá",
+      "ubicacion": "Alto Sinú, 1 h 30 min de Montería",
+      "mejorEpoca": "Diciembre a marzo",
+      "dias": "2 a 3 días",
+      "historia": "Tierralta es la puerta de entrada al Parque Nacional Natural Paramillo, una de las zonas de mayor biodiversidad del país. Cerca está el embalse de Urrá, donde se hacen paseos en lancha.",
+      "galeria": [
+        {
+          "imagen": "naturaleza-camino",
+          "alt": "Camino de tierra rodeado de árboles"
+        },
+        {
+          "imagen": "aventura-rio",
+          "alt": "Canoas en un río"
+        },
+        {
+          "imagen": "naturaleza-sabana",
+          "alt": "Sabanas verdes"
+        }
+      ]
+    },
+    {
+      "id": "rio-sinu",
+      "nombre": "Río Sinú",
+      "categoria": "naturaleza",
+      "descripcion": "Paseos en canoa y planchón entre palmeras y vegetación de ribera.",
+      "etiquetas": [
+        "Aventura",
+        "Río"
+      ],
+      "imagen": "aventura-rio",
+      "alt": "Canoas en un río rodeado de palmeras",
+      "kmDesdeMonteria": 5,
+      "lat": 8.76,
+      "lon": -75.885,
+      "subtitulo": "Paseos en canoa y planchón",
+      "ubicacion": "Atraviesa el departamento de sur a norte",
+      "mejorEpoca": "Todo el año",
+      "dias": "Medio día",
+      "historia": "El río Sinú recorre Córdoba de sur a norte. En Montería todavía se cruza en planchón, una balsa tradicional, y se puede pasear en canoa entre palmeras y vegetación de ribera.",
+      "galeria": [
+        {
+          "imagen": "aventura-rio",
+          "alt": "Canoas en un río rodeado de palmeras"
+        },
+        {
+          "imagen": "hero-rio-sinu",
+          "alt": "Atardecer sobre el río Sinú con una lancha"
+        },
+        {
+          "imagen": "monteria",
+          "alt": "Ronda del Sinú de noche"
+        }
+      ]
+    }
+  ]
+}
